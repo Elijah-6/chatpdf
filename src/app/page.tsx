@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button'
 import { UserButton, auth } from '@clerk/nextjs'
 import Link from 'next/link';
 import {LogIn} from 'lucide-react';
+import FileUpload from '@/components/FileUpload';
+
 // import Image from 'next/image'
 
 export default function Home() {
@@ -27,7 +29,7 @@ export default function Home() {
           </p>
 
           <div className="w-full mt-4">
-            {isAuth ? <h1>FileUpload</h1> : 
+            {isAuth ? <FileUpload/> : 
             <Link href ="/sign-in">
               <Button>Login to get started
                 <LogIn className='w-4 h-4 ml-2'/>

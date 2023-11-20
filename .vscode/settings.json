@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "bounded",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+}
